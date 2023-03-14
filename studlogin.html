@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+
+    
+    <style>
+        body{
+            background-color: aquamarine;
+            background-image: url("https://img.freepik.com/free-vector/tropical-green-leaves-background_52683-36494.jpg?w=1380&t=st=1671329528~exp=1671330128~hmac=cb77b071c42b04bf0b306f42e4bb575e93a53818eb4e9b4e614610efef968d65");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            top: 0;
+            left: 0;
+            position: fixed;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+
+            padding: 30px;
+            background-color:  rgb(81, 165, 24);
+            vertical-align: middle;
+
+            width: 100%;
+
+        }
+
+        .centerContainer{
+            vertical-align: middle;
+        }
+
+        .indentContainer{
+            margin-left: 100px;
+        }
+    
+    
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            display: inline;
+        }
+
+        li a {
+            display: block;
+            padding: 10px; 
+            color: #111;
+            
+        }
+
+        a:link { 
+            text-decoration: none; 
+        }
+
+        h1{
+            margin-top: 50px;
+            position: relative;
+            color: white;
+
+        }
+
+
+        li a:hover:not(.active) {
+        background-color: rgb(42, 124, 69);
+        color: aliceblue;
+        }
+
+        .active {
+        background-color: #155308;
+        color: white;
+        }
+        
+        footer{
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+
+            padding: 30px;
+            background-color: rgb(81, 165, 24);
+            vertical-align: middle;
+            text-align: center;
+
+            width: 100%;
+
+        }
+
+
+        .tableDesigns{
+            margin-top: 250px;
+            font-size: 20px;
+
+        }
+
+        .tableChange{
+            border-style: dotted;
+            border: 1px solid black;
+            border-radius: 10px;
+            position: center;
+            background-color: white;
+            font-size: 30px;
+        }
+
+
+
+        input[type = text] {
+            width: 300px;
+            height: 3em;
+            font-size: 20px;
+        }
+
+        input[type = number] {
+            width: 300px;
+            height: 3em;
+            font-size: 20px;
+        }
+
+        select{
+            width: 310px;
+            height: 3em;
+            font-size: 20px;
+        }
+
+        input[type = submit] {
+            width: 300px;
+            height: 3em;
+            border-radius: 5px;
+            text-align: center;
+            font-size: medium;
+            background-color: aqua;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+       
+        <table>
+            <tr> 
+                <div class = "centerContainer">
+                <td rowspan="2"><img style="vertical-align:middle" src = "https://www.dlsud.edu.ph/images/about-logo.png" width="100px" height="100px"></td>
+       
+                <td>De La Salle University - Dasmarinas</td></div>
+            </tr>
+        </table>
+
+        <div class="indentContainer">
+        <ul>
+            <li><a href="enabling assessment2.html">HOME</a></li>
+            <li><a class ="active" href="#home">STUDENT</a></li>
+            <li><a href="adminlogin.html">ADMIN</a></li>
+        </ul>
+        </div>
+        
+    </header>
+<center>
+<div class = "tableDesigns">
+    <h1>STUDENT</h1>
+
+    <form  action ="http://localhost/enabling assessment 2/stud_entry.php" method="POST">
+        
+        <table class="tableChange">
+            <tr>
+                <td><label>Student ID</label></td>
+                <td><input type="number" name="studid" id = "studid" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Last Name:</label></td>
+                <td><input type="text" name="lastname" id ="lastname" required></td>
+            </tr>
+            
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text" name="firstname" id ="firstname" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Middle Name:</label></td>
+                <td><input type="text" name="middlename" id ="middlename" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Course:</label></td>
+                <td>
+                    <select name = "course" required>
+                        <option selected hidden value="">Select Course</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>    
+                    <label>
+                    Section:
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="section" id="section">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" id="submit" name="submit" value="submit"></td>
+            </tr>
+    </form>
+</div>
+</center>
+    
+    <footer>
+        Programmed by: 
+    </footer>
+    
+
+
+</body>
+</html>
+
