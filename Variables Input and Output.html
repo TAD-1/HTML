@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> Variables, Input and Output</title>
+</head>
+
+<!--TIMTIMAN_ASHLEY-->
+
+<body style="background-color:#6AC695;" >
+<br><br><br><br>
+<center>
+<h1> Calculate !</h1>
+<input type = "number" placeholder="enter a number" id="inputId1" value=" ">
+<input type = "number" placeholder="enter a number" id="inputId2" value=" ">
+<br><br>
+<button type="button" onclick="getCompute();">Compute</button>
+
+<script>
+
+
+var name,course;
+
+document.write("<br><br> Welcome to the Website");
+
+name = prompt("Enter your name:")
+document.write("<br> <b> Name:" +name);
+
+course=prompt("Enter your Course:")
+document.write("<br> Course<b>:"+course); 
+
+
+function getCompute(){
+var n1=Number(document.getElementById("inputId1").value);
+var n2=Number(document.getElementById("inputId2").value);
+
+
+
+sum =(n1+n2);
+dif=(n1-n2);
+pro=(n1*n2);
+qou=(n1/n2);
+
+
+//Diplaying the value sum,diff,pro,qou
+alert("Sum: "+sum+ "\n Difference: "+dif+"\n Product: "+pro+"\n Quotient: "+qou);
+document.write("Math Operations <br>Sum: "+sum+"<br> Difference: "+dif+"<br>Product: "+pro+"<br> Quotient: "+qou);
+}
+</script>
+</center>
+</body>
+</html>

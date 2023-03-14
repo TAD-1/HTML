@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<title>First JavaScript Program place on the body </title> 
+<style>
+
+body{
+    background:powderblue;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+    position: center;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btnDesign{
+  letter-spacing: 0.05rem;
+  position: center;
+  font: size 80px;
+  background: white;
+  color: #401aff;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  display:inline-block;
+  z-index: 1;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  height:60px;
+  width:120px;     
+}
+
+</style>
+</head>
+
+<script type = "text/javascript" src="supriseFile.js"></script>
+
+<body>
+
+<script>
+var name,course,address, talent,subject;
+
+document.write("<br>Hello world!");
+document.write("<br> Welcome to JavaScript Programming");
+
+name = prompt("Enter your name:")
+document.write("<br> <b> Name:" +name);
+
+course=prompt("Enter your course:")
+document.write("<br> Course<b>:"+course); 
+
+address=prompt("Enter your address:")
+document.write("<br> Address:"+address); 
+
+    
+talent=prompt("Enter your talent:")
+document.write("<br> Talent<b>:"+talent); 
+
+
+subject=prompt("Enter your favorite subject:")
+document.write("<br> Course<b>:"+subject);
+
+</script>
+
+<dt>
+
+<Button id="externalJs" class="btnDesign" onmousedown= "clickMe()" value = "Suprise Me">Click me</Button>
+
+
+</body>
+</html>
