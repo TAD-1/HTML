@@ -1,0 +1,49 @@
+<html>
+<center>
+<head> <h1>Javascript Events</h1></head>
+</center>
+<style>
+.btn{
+   width:200px;
+   height:200px;
+   }
+   
+  .element {
+  border-radius: 50%;
+  width: 200px;
+}
+</style>
+<body>
+<center>
+<h2> Enter color</h2>
+<input type="text" id="input1" /> 
+
+<h2> Enter number</h2>
+<input type="number" id="input2" onchange="onchangeevent()"/> <br><br>
+
+<input class="btn" type="button" id="1" >
+<input class="btn" type="button" id="2" >
+<input class="btn" type="button" id="3" >
+<input class="btn" type="button" id="4" >
+<input class="btn" type="button" id="5" >
+<script>
+
+	function onchangeevent()
+	{
+                number=String(document.getElementById("input2").value); 
+                color =String(document.getElementById("input1").value); 
+				    
+					document.getElementById(number).style.background=color;	
+					document.getElementById(number).borderRadius="45px 45px 45px 45px";
+					"100%";
+                    document.getElementById(number).value=color;
+		
+	}
+	
+</script>
+<br>
+<br>
+<br>
+</center>
+</body>
+</html>
